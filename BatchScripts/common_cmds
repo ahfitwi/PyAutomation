@@ -1,0 +1,53 @@
+/* Alem Fitwi, 09/25/2017*/
+------------------------------------------------------------
+1. ipconfig (ifconfig)
+   ipconfig /all
+   ipconfig /all | findstr DNS   (| pipe)
+   ipconfig /release
+   ipconfig /renew
+   ipconfig /displaydns
+   ipconfig /displaydns | clip
+   ipconfig /flush dns (removes stale dns)
+   
+2. nslookup networkchuck.com
+   nslookup networkchuck.coffee
+
+3. cls (clear)
+4. getmac /v
+5. powercfg /energy
+   powercfg /batteryreport
+6. assoc  (file associations)
+
+7. chkdsk /f
+   chkdsk /r
+
+8. sfc /scannow
+9. DISM /online /cleanup-Image /RestoreHealth
+10. tasklist | findstr script
+11. taskkill /f /pid 201
+
+12. netsh
+    netsh interface show interfaces
+    netsh interface show interface | findstr "IP Address"
+    netsh advfirewall set all profiles state off
+
+13. ping networkchuck.coffee
+    ping -t networkchuck.coffee
+
+14. tracert networkchuck.com
+    tracert -d networkchuck.com
+
+15. netstat (ports and connections)
+    netstat -af
+    netstat -o (with PID)
+    netstat -e -t 5 (sent/received)
+
+16. route print (prints the route your computer takes to reach a certain path)
+    route add network-id mask -.-.-.-
+    route delete network-id
+
+17. shutdown (without switches)
+    shutdown /r /fw /f /t 0
+-------------------------------------------------------------------
+# with patience we can dissect an ant and reach its heart.
+------------------------------------------------------------------
