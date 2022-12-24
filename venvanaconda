@@ -1,3 +1,4 @@
+Isolated environment where you can install separate IDE versions and packages
 1. check conda version
    > conda -V
 2. Update Conda version
