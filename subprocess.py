@@ -19,9 +19,16 @@ The subprocess module allows us to:
   3. obtain their return codes
   
 It offers a higher-level interface than some of the other available modules, and is intended to replace the following functions:
-    1. os.system()
-    2. os.spawn*()
-    3. os.popen*()
-    4. popen2.*()
-    5. commands.*()
+  1. os.system()
+  2. os.spawn*()
+  3. os.popen*()
+  4. popen2.*()
+  5. commands.*()
+  
+We cannot use UNIX commands in our Python script as if they were Python code. For example, echo name is causing a syntax error because echo is not a 
+built-in statement or function in Python. So, in Python script, we're using print name instead.
+
+To run UNIX commands we need to create a subprocess that runs the command. The recommended approach to invoking subprocesses is to use the 
+convenience functions for all use cases they can handle. Or we can use the underlying Popen interface can be used directly. 
+
 """
