@@ -93,5 +93,7 @@ subprocess.call(['ls','-l'])
 
 """
 https://www.bogotobogo.com/python/python_subprocess_module.php
+You are shadowing the built in subprocess.py with your own file. Do not name your files the same thing as 
+the externals you are importing.
 """
 
