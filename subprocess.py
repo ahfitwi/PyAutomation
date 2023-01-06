@@ -95,5 +95,77 @@ subprocess.call(['ls','-l'])
 https://www.bogotobogo.com/python/python_subprocess_module.php
 You are shadowing the built in subprocess.py with your own file. Do not name your files the same thing as 
 the externals you are importing.
+
+The command line arguments are passed as a list of strings, which avoids the need for escaping quotes or other special characters that 
+might be interpreted by the shell.
 """
+
+import subprocess
+subprocess.call('echo $HOME')
+#Traceback (most recent call last):
+#...
+#OSError: [Errno 2] No such file or directory
+subprocess.call('echo $HOME', shell=True)
+#/home/alem
+#0
+"""
+Setting the shell argument to a true value causes subprocess to spawn an intermediate shell process, and tell it to run the command. 
+In other words, using an intermediate shell means that variables, glob patterns, and other special shell features in the command 
+string are processed before the command is run. Here, in the example, $HOME was processed before the echo command. Actually, this 
+is the case of command with shell expansion while the command ls -l considered as a simple command.
+
+Here is a sample code (PyGoogle/FFMpeg/iframe_extract.py). It downloads YouTube video and then extracts I-frames to sub folder:
+"""
+
+#----------------------------------------------------------------------
+import os
+import sys
+
+os.system('echo $HOME')
+
+# or we can use
+os.system('echo %s' %'$HOME')
+
+#----------------------------------------------------------------------
+#popen()
+# shadowing: the same filename as subprocess --> subprocess.py
+os.chdir('/')
+import subprocess
+subprocess.call(['ls','-l'], shell=True)
+subprocess.Popen(['ls','-l'], shell=True)
+print("---------------------------------------------")
+#----------------------------------------------------------------------
+p1 = subprocess.run(['ls','-l'], shell=True, capture_output=True)
+print("---------------------------------------------")
+print(p1.stdout.decode())
+print("---------------------------------------------")
+p2 = subprocess.run(['ls','-la'], shell=True, capture_output=True, text=True)
+print(p2.stdout)
+print("---------------------------------------------")
+p2 = subprocess.run(['ls'], shell=True, capture_output=True, text=True)
+print(p2.stdout)
+print("---------------------------------------------")
+try:
+    with open("opt.txt", 'w') as f:
+        p3 = subprocess.run(['ls','-l'], shell=True, stdout=f, text=True)
+except:
+    print(sys.exc_info()[0])
+
+print("---------------------------------------------")
+import subprocess as sp
+#sp1 = sp.Popen(cmd, shell=True/False, stdout=sp.PIPE, stderr=sp.PIPE)
+#  cmd = put external command
+#  shell=True/False --> opens shell for str cmd if True else list
+#    cmd='dir', cmd='ls -lrt' --> shell=True
+#    cmd=['ls',  '-lrt'] --> shell=False
+#  stdout=sp.PIPE --> real output 
+#  stderr=sp.PIPE --> error
+cmd = ['ls', '-la']
+sp1 = sp.Popen(cmd, shell=False, stdout=sp.PIPE, stderr=sp.PIPE, universal_newlines=True)
+sp1.wait() # capture written code, rc = sp1.wait()
+out, error = sp1.communicate()
+print(out)
+print(error)
+#Split output into lines
+print(out.split('\\n'))
 
