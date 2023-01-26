@@ -107,6 +107,33 @@ git stash: This command temporarily stores all the modified tracked files.
             $ clip < ~/.ssh/id_ed25519.pub
             $ cat ~/.ssh/id_ed25519.pub | clip
 7. Paste your key into the "Key" field.
-            ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO7srV4vMLV09uv/8Z+pktnl9O4X6LXgLVFZe90vsrvS fitwialem2022@fb.com
+            ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO7srV4vMLV09uv/8Z+pktnl9O4X6LXgLVFZe90vsrvS ahfitwi@gmail.com
 8. Click Add SSH key.
              click on "Add SSH Key" button
+             
+#----------------------------------------------------------------------------------------------------------
+# Commands
+#----------------------------------------------------------------------------------------------------------
+- Here are the commands I often use to create a branch on Github
+    - First Navigate to Main
+    - Create New Branch: 
+        - git branch -C IQTDA_Chroma
+    - List Branches
+        - git branch
+    - Switch to Branch
+        - git checkout IQTDA_Chroma
+        - git add file_name ... or git add. (or git add foldername/)
+    - Status
+        - git status
+    - Commit Changes
+        - git commit -m "Add Message Here"
+    - Push Changes to github
+        - git push origin head
+    - Switch to main
+        - git checkout main
+        
+**NB**: I can't create branch on your main (Changting's) because I don't have that privilege!m
+
+#----------------------------------------------------------------------------------------------------------
+# Commands
+#----------------------------------------------------------------------------------------------------------
