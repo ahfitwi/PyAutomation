@@ -117,11 +117,11 @@ git stash: This command temporarily stores all the modified tracked files.
 - Here are the commands I often use to create a branch on Github
     - First Navigate to Main
     - Create New Branch: 
-        - git branch -C IQTDA_Chroma
+        - git branch -C alemb
     - List Branches
         - git branch
     - Switch to Branch
-        - git checkout IQTDA_Chroma
+        - git checkout alemb
         - git add file_name ... or git add. (or git add foldername/)
     - Status
         - git status
@@ -132,8 +132,28 @@ git stash: This command temporarily stores all the modified tracked files.
     - Switch to main
         - git checkout main
         
-**NB**: I can't create branch on your main (Changting's) because I don't have that privilege!m
+**NB**: I can't create branch on your main (Changting's) because I don't have that privilege!
 
 #----------------------------------------------------------------------------------------------------------
 # Commands
 #----------------------------------------------------------------------------------------------------------
+Normally:
+
+0. Git version
+    - git --version
+1. CD to the github on local disk
+    - git init #if the first time
+2. Hook the remote url to the local file/repo
+    - git remote add origin https://github.com/ahfitwi/PyAutomation.git
+    - git remote set-url origin https://github.com/ahfitwi/PyAutomation.git
+3. Check Status
+    - git status
+4. Adding/ staging Files
+    - git add folder\ or file.py or . # period to add all files
+5. Once files are staged, commit
+    - git commit -m "Add Text Message here"
+6. Push 
+    - git push -u origin main/master 
+    - git push origin head
+7.  pull
+    - git pull origin main
