@@ -132,7 +132,7 @@ git stash: This command temporarily stores all the modified tracked files.
     - Switch to main
         - git checkout main
         
-**NB**: I can't create branch on your main (Changting's) because I don't have that privilege!
+**NB**: I can't create branch on your main (XX's) because I don't have that privilege!
 
 #----------------------------------------------------------------------------------------------------------
 # Commands
