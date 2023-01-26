@@ -30,12 +30,39 @@ git log: This command is used to list the version history for the current branch
       # git log
       # git log –follow[file]: this command lists version history for a file, including the renaming of files also.
       # git log --follow gitcmds.txt
-git show
-git tag
-git branch
-git checkout
-git merge
-git remote
-git push
-git pull
-git stash
+git show: This command shows the metadata and content changes of the specified commit
+      # git show [commit]
+      # git show 78fs86sfsf67sf8s76f7sf7sf67sf67s6f7s8
+git tag: This command is used to give tags to the specified commit.
+      # git tag [commitID]
+      # git tag 78fs86sfsf67sf8s76f7sf7sf67sf67s6f7s8
+git branch: This command lists all the local branches in the current repository.
+      # git branch
+      # git branch [branch name]: git branch branch_1 --> This command creates a new branch.
+      # git branch -d [branch name]: This command deletes the feature branch.
+git checkout: This command is used to switch from one branch to another.
+      # git checkout [branch name]: git checkout branch_1
+      # git checkout -b [branch name]: This command creates a new branch and also switches to it.
+git merge: This command merges the specified branch’s history into the current branch.
+      # git merge [branch name]: git merge branch_2
+git remote: This command is used to connect your local repository to the remote server.
+      # git remote add [variable name] [Remote Server Link]
+      # git remote add origin https://github.com/ahfitwi/PyAutomation.git
+git push: This command sends the committed changes of master branch to your remote repository.
+      # git push [variable name] master
+      # git push origin master
+      # git push [variable name] [branch]: This command sends the branch commits to your remote repository.
+      # git push origin master
+      # git push –all [variable name]: This command pushes all branches to your remote repository.
+      # git push --all origin
+      # git push [variable name] :[branch name]: This command deletes a branch on your remote repository.
+      # git push origin : branch_2
+git pull: This command fetches and merges changes on the remote server to your working directory.
+      # git pull [Repository Link] 
+      # git pull https://github.com/ahfitwi/PyAutomation.git
+git stash: This command temporarily stores all the modified tracked files.
+      # git stach save
+      # git stash pop: This command restores the most recently stashed files.
+      # git stash list: This command lists all stashed changesets.
+      # git stash drop: This command discards the most recently stashed changeset
+#----------------------------------------------------------------------------------------------------------
