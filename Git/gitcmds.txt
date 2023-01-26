@@ -1,0 +1,41 @@
+git config: This command sets the author name and email address respectively to be used with your commits
+      # git config –global user.name "ahfitwi"; 
+      # git config –global user.email “ahfitwi@gmail.com”
+git init: This command is used to start a new repository.
+      # git init [repository name]
+      # git init C:\Users\ahfitwi\Documents\GitHub\HelpfulMaterials
+git clone: This command is used to obtain a repository from an existing URL.
+      # git clone [url]
+      # git clone https://github.com/ahfitwi/PyAutomation.git
+git add: This command adds a file to the staging area.
+      # git add [file]  
+      # git add gitcmds.txt
+git commit: This command records or snapshots the file permanently in the version history.
+      # git commit -m “[ Type in the commit message]” 
+      # git commit -a : This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.
+git diff: This command shows the file differences which are not yet staged.
+      # git diff –staged: This command shows the differences between the files in the staging area and the latest version present.
+git reset: This command unstages the file, but it preserves the file contents.
+      # git reset [file]
+      # git reset gitcmds.txt
+      # git reset [commit]: This command undoes all the commits after the specified commit and preserves the changes locally.
+      # git reset 78fs86sfsf67sf8s76f7sf7sf67sf67s6f7s8
+      # git reset –hard [commit]: This command discards all history and goes back to the specified commit.
+git status: This command lists all the files that have to be committed.
+      # git status
+git rm: This command deletes the file from your working directory and stages the deletion.
+      # git rm [file] 
+      # git rm gitcmds.txt
+git log: This command is used to list the version history for the current branch.
+      # git log
+      # git log –follow[file]: this command lists version history for a file, including the renaming of files also.
+      # git log --follow gitcmds.txt
+git show
+git tag
+git branch
+git checkout
+git merge
+git remote
+git push
+git pull
+git stash
