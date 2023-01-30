@@ -6,6 +6,7 @@
 1. What is Regression Testing?
   - RT is the check of already tested features after system changes
   - The Task of a QA ENgineer is to ensure codes changes have not impacted the existing features.
+  Regression testing is performed when there are any modifications of the code or changes of some features. This type of software testing helps to verify   whether the system operates properly after undergoing some code modifications. It is also used to make sure that the system did not regress, and the   old bugs that have already been fixed did not reappear after the new changes.
 2. Why DO We Need To Do Regression Testing?
   - RT helps to make sure that the system in its new state is working properly
   - Regression doesn't mean that SW is rolloed back to the previous version. 
@@ -14,6 +15,13 @@
   - The features that used to work just fine appear to have bugs
   - So the testing team needs to make sure that the system in its new state is working properly 
   - In other words,  RT mitigates the risk of collateral damage. 
+  
+    Regression testing improves product quality.
+    This type of testing can be automated.
+    It ensures that the fixed bugs and issues do not reoccur. 
+    This type of testing verifies that the modifications do not impact the correct work of the already tested code and detects any side effects.
+    Regression tests can be used during integration testing. In this case, they will be more useful.
+    
 3. When Do We Need To DO Regression Testing
 - We need to run RT whenever there is a change in software code or environment.
   By changes in code we mean anything that modifies any part of the sw product
@@ -23,6 +31,10 @@
         - COnfiguration Changes
   - Keep in mind that Regression takes place at the end of every iteration, not immediately after the change.
     Otherwie, it can keep going round in circles.
+  - The main aim of regression testing is to discover the errors that may be introduced accidentally after:
+      adding a new feature
+      enhancing the software
+      fixing a bug of any kind
   
 4. How Do We Do Regression Testing?
   - During the RT, the QA team runs existing test cases or scripts again
@@ -33,6 +45,22 @@
      It will help to decide what apart from the business critical features should be tested)
   4. Running Exploratory Testing (forget about pre-written cases and focus on the features 
      using your own intuition and experience in stead of the ready scenarios)
+     
+      Corrective Regression Testing:
+      It checks how the new code influences the code that has already existed.
+      Tests can be reused. 
+      There are no changes in the specifications.
+      Progressive Regression Testing:
+      The program specifications change.
+      New tests are created.
+      Retest All Strategy:
+      The whole system is retested to make sure no bugs appeared or reappeared after the changes.
+      All tests are reused.
+      It is an expensive and time consuming procedure.
+      Selective Strategy:
+      Only the part of the system that is likely to be most affected by the changes is retested after the changes.
+      Only the tests directly connected with the modified code fragment are rerun.
+      This method is faster and cheaper than Retest All Strategy, but some bugs can remain undetected. 
   
 5. What Approach Can We Use To Implement Regression Testing?
 - It seems that such a frequently run test suite is a must for automation.
@@ -54,6 +82,7 @@
   that combines the best of automated and manual testing prevents unexpected bugs therefore it saves 
   the projects from going over budget or release delays. It sounds like a decent reason to never skip
   Regression Tests.
-- 
-- 
+- Regression testing helps the team to identify the defects and eliminate them earlier in the software 
+  development life cycle.
+- Regression testing is an important part of the testing process and strategy, which helps to prevent bugs at the early stages and ensures that everything is working properly after any modifications.
   
