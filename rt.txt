@@ -6,7 +6,10 @@
 1. What is Regression Testing?
   - RT is the check of already tested features after system changes
   - The Task of a QA ENgineer is to ensure codes changes have not impacted the existing features.
-  Regression testing is performed when there are any modifications of the code or changes of some features. This type of software testing helps to verify   whether the system operates properly after undergoing some code modifications. It is also used to make sure that the system did not regress, and the   old bugs that have already been fixed did not reappear after the new changes.
+  Regression testing is performed when there are any modifications of the code or changes of some features. 
+  This type of software testing helps to verify   whether the system operates properly after undergoing some 
+  code modifications. It is also used to make sure that the system did not regress, and the   old bugs that 
+  have already been fixed did not reappear after the new changes.
 2. Why DO We Need To Do Regression Testing?
   - RT helps to make sure that the system in its new state is working properly
   - Regression doesn't mean that SW is rolloed back to the previous version. 
