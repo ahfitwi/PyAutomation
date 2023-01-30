@@ -1,0 +1,59 @@
+# Regression Testing
+
+- Every sw product requires a personal approach but there is a thing all the QA strategies have in common. 
+  One of the final steps leadingin to the release is RTing.
+- To help you undertand this type pof testing better, I will answer four baic questions.
+1. What is Regression Testing?
+  - RT is the check of already tested features after system changes
+  - The Task of a QA ENgineer is to ensure codes changes have not impacted the existing features.
+2. Why DO We Need To Do Regression Testing?
+  - RT helps to make sure that the system in its new state is working properly
+  - Regression doesn't mean that SW is rolloed back to the previous version. 
+  - On the contrary the system advances.
+  - SOmetimes the changes we make may have an unexpected  impact on another part of the system.
+  - The features that used to work just fine appear to have bugs
+  - So the testing team needs to make sure that the system in its new state is working properly 
+  - In other words,  RT mitigates the risk of collateral damage. 
+3. When Do We Need To DO Regression Testing
+- We need to run RT whenever there is a change in software code or environment.
+  By changes in code we mean anything that modifies any part of the sw product
+        - New Functionalities added
+        - Requirements Change
+        - Bug/Defect/Issue Fix
+        - COnfiguration Changes
+  - Keep in mind that Regression takes place at the end of every iteration, not immediately after the change.
+    Otherwie, it can keep going round in circles.
+  
+4. How Do We Do Regression Testing?
+  - During the RT, the QA team runs existing test cases or scripts again
+  - There sre several techniques that can be applied
+  1. Retesting Everything (complete functionality)
+  2. Prioritizing Test Cases (check only business critical features)
+  3. Breaking Down and Classifying Testing (for easier implementation over time. 
+     It will help to decide what apart from the business critical features should be tested)
+  4. Running Exploratory Testing (forget about pre-written cases and focus on the features 
+     using your own intuition and experience in stead of the ready scenarios)
+  
+5. What Approach Can We Use To Implement Regression Testing?
+- It seems that such a frequently run test suite is a must for automation.
+- It actually is but things are not that straightforward.
+- We are to deal with a legacy versus modern appraoch dilemma. 
+- Traditionally RTs encompass a pre-agreed scope of features
+- Modern practices empahsize the necessity of using uncertainty.
+- The uncertainty builds a perfect background for exploratory tests which are manual only.
+- My verdict would be automate as much as you can but don't give up on manual tests
+- We are to deal with a legacy versus modern.
+  - To automate or not to automate
+  - Automation: checking pre-agreed scope only
+  - Manual Testing: covering new risks
+6. What Is Regresstion Testing Not?
+
+7. Concluding Remarks
+- Let us sum it up before running regression tests you cannot be sure that the new version of the SW
+  has not broken while the team has been implementing the changes an effective regression QA strategy 
+  that combines the best of automated and manual testing prevents unexpected bugs therefore it saves 
+  the projects from going over budget or release delays. It sounds like a decent reason to never skip
+  Regression Tests.
+- 
+- 
+  
