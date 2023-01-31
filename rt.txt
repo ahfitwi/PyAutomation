@@ -22,7 +22,8 @@
     Regression testing improves product quality.
     This type of testing can be automated.
     It ensures that the fixed bugs and issues do not reoccur. 
-    This type of testing verifies that the modifications do not impact the correct work of the already tested code and detects any side effects.
+    This type of testing verifies that the modifications do not impact the correct work of the already 
+    tested code and detects any side effects.
     Regression tests can be used during integration testing. In this case, they will be more useful.
     
 3. When Do We Need To DO Regression Testing
@@ -87,5 +88,6 @@
   Regression Tests.
 - Regression testing helps the team to identify the defects and eliminate them earlier in the software 
   development life cycle.
-- Regression testing is an important part of the testing process and strategy, which helps to prevent bugs at the early stages and ensures that everything is working properly after any modifications.
+- Regression testing is an important part of the testing process and strategy, which helps to prevent 
+bugs at the early stages and ensures that everything is working properly after any modifications.
   
